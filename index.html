@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinny's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+Ahom&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-container"> 
+            <div class="navbar">
+                <div class="hamburger" onclick="toggleSidebar()">
+                    &#9776; 
+                    <div class="home">Jinny</div>
+                </div>
+                <div class="navbar-left">
+                    <div class="home"><a href="#jinny" class="btn">Jinny</a></div>
+                </div>
+                <div class="navbar-center">
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="assets/CV_Jinny.pdf" target="_blank" title="CV Jinny - UI/UX Designer">CV</a></div>
+                </div>
+                <div class="navbar-right">
+                    <div><a href="#contact">Contact me</a></div>
+                </div>
+            </div>     
+    </div> 
+<!-- Sidebar Menu -->
+<div class="sidebar" id="sidebar">
+    <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+    <a href="#jinny" onclick="navigateToSection('jinny')">Home</a>
+    <a href="#about" onclick="navigateToSection('about')">About Me</a>
+    <a href="#projects" onclick="navigateToSection('projects')">Projects</a>
+    <a href="#cv" onclick="handleNavigation(event, 'projects', 'assets/CV_Jinny.pdf')">CV</a>
+    <a href="#contact" onclick="navigateToSection('contact')">Contact</a>
+  </div>
+
+
+        <div class="bg_jinny" id="jinny">
+            <div class="test">Hello, I am</div>
+            <div class="test"><h1>Jinny</h1></div>
+            <div class="test">💻 & 🎨 enthusiast!</div>
+        </div>
+
+	
+	<section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate UI/UX Designer with a background in Information Technology, dedicated to creating intuitive and user-centric designs. I specialize in user research, wireframing, prototyping, and crafting responsive interfaces that blend functionality with aesthetics. Proficient in tools like Figma and Adobe Photoshop, I excel at transforming complex ideas into visually compelling and accessible solutions. With a keen eye for detail and a collaborative approach, I work with cross-functional teams to understand user needs, solve design challenges, and deliver impactful experiences that align with business goals.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Here's some of my projects</h2>
+            <div class="portfolio-item">                
+                <div class="contain">
+                    <div class="box">
+                        <h3>E-Voting</h3>
+                        <div class="portfolio-p"><p style="font-size: small;">This e-voting prototype is designed for the Ketua RT election in Kelurahan Darat Sekip. It has two main sections: Public page (accessible by everyone); Admin/Committe Page (restricted access). This platform simplifies the voting process, ensuring transparency and efficient management. </p></div>
+                        <div class="btn-portfolio">
+                            <div class="contain1">
+                                <div class="box1"><a href="https://www.figma.com/proto/yBltGxRXmyJ1wlz6hG5tP8/E-Voting?node-id=1-2&node-type=canvas&t=bqAt627zRZJ6MPYC-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">Public Page</a></div>
+                                <div  class="box1"><a href="https://www.figma.com/proto/yBltGxRXmyJ1wlz6hG5tP8/E-Voting?node-id=127-1181&node-type=canvas&t=YOAAcjRUW0LSSMrF-1&scaling=scale-down-width&content-scaling=fixed&page-id=54%3A80&starting-point-node-id=127%3A1181" target="_blank">Admin/Committe Page</a></div>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/e-voting.jpg" alt="Deskripsi Gambar" height="200px" height="auto">
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="contain">
+                    <div class="box">
+                        <h3>Lin's Jewelry</h3>
+                        <div class="portfolio-p"><p style="font-size: small;">Prototype of an e-commerce website for a gold store, showcasing products available for purchase online, along with a range of additional services.</p></div>
+                        <div class="btn-portfolio">
+                            <a href="#jinny" target="_blank">View Prototype</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/test.jpg" alt="Deskripsi Gambar" height="200px" height="auto">
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">            
+                <div class="contain">
+                    <div class="box">
+                        <h3>Plantify</h3>
+                        <div class="portfolio-p"><p style="font-size: small;">Prototype of a mobile application designed to help users care for their plants, featuring diagnostic tools, care guides, and reminders.</p></div>
+                        <div class="btn-portfolio">
+                            <a href="#jinny" target="_blank">View Prototype</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/test.jpg" alt="Deskripsi Gambar" height="200px" height="auto">
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">               
+                <div class="contain">
+                    <div class="box">
+                        <h3>My Website Portfolio</h3>
+                        <div class="portfolio-p"><p>The current page you are visiting shows my projects</p></div>
+                        <div class="btn-portfolio">
+                            <a href="#jinny" target="_blank">View Source Code</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/test.jpg" alt="Deskripsi Gambar" height="200px" height="auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact me</h2>
+            <div class="contact">
+                <div>
+                    <a href="https://www.linkedin.com/in/jinny-sie-781b22283/" target="_blank" title="Linked In: Jinny Sie ">
+                    <i class="bi bi-linkedin" style="font-size: 20px; color: #0077b5;"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://wa.me/081351964768" target="_blank" title="Whatsapp: 081351964768">
+                    <i class="bi bi-whatsapp" style="font-size: 20px; color: #25d366"></i>
+                    </a>
+                </div>
+                <div>  
+                    <a href="mailto:jinny.sie@gmail.com?subject=Pertanyaan&body=Halo%20saya%20mau%20bertanya" target="_blank" title="Email: jinny.sie@gmail.com">
+                    <i class="bi bi-envelope-fill" style="font-size: 21px; color:  #2c3e50"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 by Jinny. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
