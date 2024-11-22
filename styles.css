@@ -41,16 +41,6 @@ body {
   position: relative; /* Added relative positioning */
 }
 
-.navbar {
-  max-width: 1560px;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  position: relative; /* Added relative positioning */
-}
-
 .navbar-left div:hover,
 .navbar-center div:hover,
 .navbar-right div:hover {
@@ -205,7 +195,13 @@ a:hover {
   cursor: pointer;
 }
 
+.navbar {
+  padding: 0.5rem 1rem; /* Kurangi padding untuk layar kecil */
+}
 
+.container {
+  padding: 0 1rem; /* Kurangi padding untuk layar kecil */
+}
 
   .navbar-left,
   .navbar-center,
