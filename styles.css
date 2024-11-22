@@ -11,8 +11,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensure full page height */
-  overflow-x: hidden; /* Hide horizontal overflow */
+  height: 100%; 
+  overflow-x: hidden; 
 }
 
 body {
@@ -37,8 +37,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  position: relative; /* Added relative positioning */
+  margin: auto;
+  position: relative;
 }
 
 .navbar-left div:hover,
@@ -153,7 +153,7 @@ a:hover {
 }
 
 .sidebar.active {
-  left: 0; /* Show sidebar when active */
+  left: 0; 
 }
 
 .sidebar a {
@@ -285,7 +285,7 @@ h1 {
 
 section {
   padding: 2rem 0;
-  scroll-margin-top: 30px; /* Prevent content from being hidden by sticky navbar */
+  scroll-margin-top: 30px; 
 }
 
 section h2 {
@@ -351,8 +351,8 @@ p {
   margin:auto;
   align-items: center;
   display: flex; 
-  max-width: 100%; /* Gambar tidak akan lebih lebar dari kontainer */
-  height: auto; /* Tinggi akan menyesuaikan proporsi */
+  max-width: 100%; 
+  height: auto;
   display: block; 
   border-radius: 3px; 
 }
